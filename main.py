@@ -52,7 +52,8 @@ class DBRegex(Tools):
         return self.cursor.execute('SELECT * FROM rules;').fetchall()
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     instance = DBRegex()
+    print(instance.data)
     print(instance.rules_table())
     print(instance.filtered_domains())
